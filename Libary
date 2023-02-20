@@ -13,6 +13,9 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
 
+local smalwords = {"1J", "O9", "I9", "ZD", "JG", "H6", "AA", "LO", "PA", "S1"}
+
+ScreenGui.Name = smalwords[math.random(#1)] .. smalwords[math.random(#1)] ... smalwords[math.random(#1)] .. smalwords[math.random(#1)] .. smalwords[math.random(#1)] .. smalwords[math.random(#1)]
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
 
